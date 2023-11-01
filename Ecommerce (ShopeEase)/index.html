@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--custom css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- logo -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- header section starts -->
+    <header class="header">
+
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> ShopEasy </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="categories.html">categories</a>
+            <a href="review.html">review</a>
+            <a href="#blogs">blogs</a>
+            <a href="payment.html">Checkout</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <!-- <div class="menu-btn" style="display: none;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#features">features</a></li>
+                <li><a href="#products">products</a></li>
+                <li><a href="categories.html">categories</a></li>
+                <li><a href="review.html">review</a></li>
+                <li><a href="#blogs">blogs</a></li>
+            </ul>
+        </div> -->
+        
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/img1-watch.png" alt="">
+            <div class="content">
+                <h3>Smart Watch</h3>
+                <span class="price">₹1,999.00</span>
+                <span class="quantity">qty: </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/img2-watch.png" alt="">
+            <div class="content">
+                <h3>Analog Watch</h3>
+                <span class="price">₹2,999.00</span>
+                <span class="quantity">qty: </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/deo.png" alt="">
+            <div class="content">
+                <h3>Deodrant</h3>
+                <span class="price">₹699.00</span>
+                <span class="quantity">qty: </span>
+            </div>
+        </div>
+        <div class="total"> total : ₹5697.00</div>
+        <a href="#" class="btn">checkout</a>
+        </div>
+
+        <div class="form login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">click here</a></p>
+            <input type="submit" value="login now" class="btn">
+        </div>
+    </header>
+    
+    <!-- header section ends -->
+
+
+    <!-- back to top button -->
+    <button id="BackToTopButton" onclick="goToTop()" title="Back To Top" class="hidden w-20 h-20 rounded-full text-5xl font-bold text-white border-0 fixed bottom-20 right-12 z-50 bg-[#ff7800] drop-shadow-lg">&uarr;</button>    
+
+    <!-- home section starts here -->
+
+    <section class="bg-[#FEAF34] bg-no-repeat flex items-center justify-center bg-center bg-cover px-60 " id="home">
+        <div class="text-center w-240">
+            <h3 class="text-[#130f40] text-5xl">The Best<span class="text-[#eb3a0e] text-7xl"> Offers</span> for you</h3>
+            <p class="text-[#666] text-3xl px-4 py-0 ">The best offers for you at your fingertips.</p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+        <div class=""><img src="images/banner.png" alt="" class="h-80"></div>
+    </section>
+
+    <!-- home section ends here -->
+
+    <!-- features section  starts here -->
+    <section class="features" id="features">
+
+        <h1 class="heading"> our <span>features</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/tech.png" alt="">
+                <h3>Newest Tech</h3>
+                <p>The newest tech at your fingertips</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/delivery.png" alt="">
+                <h3>Fast Delivery</h3>
+                <p>We provide the fastest delivery even at remote places.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        
+            <div class="box-container">
+            <div class="box">
+                <img src="images/scan.png" alt="">
+                <h3>Easy Payment</h3>
+                <p>Easy Shopping and Easy pay with just the touch of you fingers.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- feature section ends here -->
+
+
+    <!-- products start here -->
+
+    <section class="products" id="products">
+        <h1 class="heading"> our <span> products</span></h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="images/deo.png" alt="">
+                    <h3>New Roll over deo in the market</h3>
+                    <div class="price">₹699.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/img1-watch.png" alt="">
+                    <h3>New Smart Watch in the market</h3>
+                    <div class="price">₹1,999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/img2-watch.png" alt="">
+                    <h3>Peter England Analog Watch</h3>
+                    <div class="price">₹2,999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/watch.png" alt="">
+                    <h3>Fossil Chronograph Men Watch</h3>
+                    <div class="price">₹5,999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/adidas shoes.png" alt="">
+                    <h3>Adidas Adi Luxe Taekwondo Shoes</h3>
+                    <div class="price">₹4,999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/shoe.png" alt="">
+                    <h3>Nike Mens M Zoom Running Shoe</h3>
+                    <div class="price">₹6,999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/bags.png" alt="">
+                    <h3>Unisex's Backpack for Men Women</h3>
+                    <div class="price">₹999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="images/headphones.png" alt="">
+                    <h3>Logitech G435 Headphones</h3>
+                    <div class="price">₹6,999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/tote bag.png" alt="">
+                    <h3>Kawn® Women Corduroy Tote Bag</h3>
+                    <div class="price">₹499.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/heels.png" alt="">
+                    <h3>Mochi Women Synthetic Sandals</h3>
+                    <div class="price">₹1,499.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/leather bag.png" alt="">
+                    <h3>ShopEasy Leather Backpack</h3>
+                    <div class="price">₹1,299.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/cardigan.png" alt="">
+                    <h3>Oversized Fit Sweatshirt</h3>
+                    <div class="price">₹2,299.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- products ends here -->
+
+    
+    <!-- Categories section starts here -->
+    
+    <section class="categories" id="categories" style="display: none;">
+
+        <h1 class="heading">product <span>categories</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/watch.png" alt="">
+                <h3>Watches</h3>
+                <p>upto 35% off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="images/shoe.png" alt="">
+                <h3>Shoes</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="images/bags.png" alt="">
+                <h3>Bags</h3>
+                <p>upto 70% off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            
+            <div class="box">
+                <img src="images/cardigan.png" alt="">
+                <h3>Clothes</h3>
+                <p>Buy 1 get 1 free offer</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Categories section ends here -->
+
+    <!-- review section starts here -->
+    
+    <section class="review" id="review" style="display: none;">
+
+        <h1 class="heading"> Customer's <span>review</span></h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="images/face 1.png" alt="">
+                    <p>The website keeps all the trendy products which helps me keep up with the latest fashion. I like my experience on this website.</p>
+                    <h3>Rwiddhi Bagchi</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/face2.png" alt="">
+                    <p>The website has a very simple design which helps me navigate easily. I came to know about this website through a friend of mine.</p>
+                    <h3>Soumodip Bhattacharyya</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/face 3.png" alt="">
+                    <p>This is one of the best websites i have come across this year. It has the best deals and offers and also gives pretty fast delivery.</p>
+                    <h3>Sourish Bose</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/face4.png" alt="">
+                    <p>I have always been a shopping lover and this website has been a great source for me to enjoy my shopping while sitting at home.</p>
+                    <h3>Priti Mondal</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+    </section>
+    
+    
+    <!-- review section ends here -->
+
+    <!-- blogs section starts here -->
+    
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading">our<span>blogs</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/watch-blog.png" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Susmita </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 12 September, 2023 </a>
+                    </div>
+                    <h3>The best watches at the lowest price</h3>
+                    <p>Famous brands like Fossils have been giving insane offers recently to take over the market. So if you always wanted that fossil watch it's your time.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="images/headphones-blog.png" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Sourish </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 01 June, 2023 </a>
+                    </div>
+                    <h3>The rise of gaming headphones</h3>
+                    <p>With the rise of gaming in India gaming headphones have seen an surge in the recent market. Logitech is taking this oppurtunity to increase their sales by providing headphones at offers.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="images/nike-blog.png" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Priti </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 2 September, 2023 </a>
+                    </div>
+                    <h3>Nike shoes are taking over the market</h3>
+                    <p>With the latest launch of the Nike court series Nike are taking over the market by going beyond sales. This is giving them a huge lead over their competitors.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- blogs section ends here -->
+
+    <!-- footer section starts here -->
+    
+    <section class="footer">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>ShopEasy <i class="fas fa-shopping-basket"></i></h3>
+                <p>The best offers for you at your fingertips.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone">+918674332121</i></a>
+                <a href="#" class="links"> <i class="fas fa-phone">+918674332121</i></a>
+                <a href="#" class="links"> <i class="fas fa-envelope"> shopeasy@gmail.com </i></a>
+                <a href="#" class="links"> <i class="fas fa-map-marked-alt"> kolkata West Bengal - 700016 </i></a>
+                </div>
+            </div>
+        </div>    
+            
+        <!-- <div class="vox-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right">home</i></a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right">features</i></a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right">products</i></a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right">categories</i></a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right">review</i></a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right">blogs</i></a>
+                </div>
+            </div> -->
+            
+            <!-- <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="images/payments.png" class="payment-img" alt="payment cards">
+                </div>
+            </div> -->
+
+            <div class="credit">created by <span>Team SAS</span> | all rights reserved</div>
+        </div>
+
+    </section>
+    
+    
+    <!-- footer section ends here -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- js file link-->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--custom css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- header section starts -->
+    <header class="header">
+
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> ShopEasy </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="categories.html">categories</a>
+            <a href="review.html">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/img1-watch.png" alt="">
+            <div class="content">
+                <h3>Smart Watch</h3>
+                <span class="price">₹1,999.00</span>
+                <span class="quantity">qty: </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/img2-watch.png" alt="">
+            <div class="content">
+                <h3>Analog Watch</h3>
+                <span class="price">₹2,999.00</span>
+                <span class="quantity">qty: </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/deo.png" alt="">
+            <div class="content">
+                <h3>Deodrant</h3>
+                <span class="price">₹699.00</span>
+                <span class="quantity">qty: </span>
+            </div>
+        </div>
+        <div class="total"> total : ₹5697.00</div>
+        <a href="#" class="btn">checkout</a>
+        </div>
+
+        <div class="form login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">click here</a></p>
+            <input type="submit" value="login now" class="btn">
+        </div>
+    </header>
+    
+    <!-- header section ends -->
+
+        <!-- Categories section starts here -->
+    
+        <section class="categories" id="categories">
+
+            <h1 class="heading">product <span>categories</span> </h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/watch.png" alt="">
+                    <h3>Watches</h3>
+                    <p>upto 35% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+    
+                <div class="box">
+                    <img src="images/shoe.png" alt="">
+                    <h3>Shoes</h3>
+                    <p>upto 45% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+    
+                <div class="box">
+                    <img src="images/bags.png" alt="">
+                    <h3>Bags</h3>
+                    <p>upto 70% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                
+                <div class="box">
+                    <img src="images/cardigan.png" alt="">
+                    <h3>Clothes</h3>
+                    <p>Buy 1 get 1 free offer</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+
+                <div class="box">
+                    <img src="images/headphones.png" alt="">
+                    <h3>Headphones</h3>
+                    <p>upto 30% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+
+                <div class="box">
+                    <img src="images/deo.png" alt="">
+                    <h3>Deo</h3>
+                    <p>Buy 1 get 1 free offer</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+
+                <div class="box">
+                    <img src="images/heels.png" alt="">
+                    <h3>Heels</h3>
+                    <p>Flat 40% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+
+                <div class="box">
+                    <img src="images/tote bag.png" alt="">
+                    <h3>Tote Bag</h3>
+                    <p>upto 80% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+    
+        </section>
+        
+        <!-- Categories section ends here -->
+<!-- footer section starts here -->
+    
+<section class="footer">
+
+    <div class="box-container">
+        <div class="box">
+            <h3>ShopEasy <i class="fas fa-shopping-basket"></i></h3>
+            <p>The best offers for you at your fingertips.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone">+918674332121</i></a>
+            <a href="#" class="links"> <i class="fas fa-phone">+918674332121</i></a>
+            <a href="#" class="links"> <i class="fas fa-envelope"> shopeasy@gmail.com </i></a>
+            <a href="#" class="links"> <i class="fas fa-map-marked-alt"> kolkata West Bengal - 700016 </i></a>
+            </div>
+        </div>
+    </div>    
+        
+    <!-- <div class="vox-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">home</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">features</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">products</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">categories</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">review</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">blogs</i></a>
+            </div>
+        </div> -->
+        
+        <!-- <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="images/payments.png" class="payment-img" alt="payment cards">
+            </div>
+        </div> -->
+
+        <div class="credit">created by <span>Team SAS</span> | all rights reserved</div>
+    </div>
+
+</section>
+
+
+<!-- footer section ends here -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- js file link-->
+<script src="script.js"></script>
+</body>
+</html>    

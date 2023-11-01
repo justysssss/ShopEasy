@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEasy</title>
+    <title>ShopEase</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
@@ -12,9 +12,6 @@
 
     <!--custom css file -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- logo -->
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
     
@@ -26,7 +23,7 @@
         <nav class="navbar">
             <a href="index.html">home</a>
             <a href="#features">features</a>
-            <a href="#products">products</a>
+            <a href="product.html">products</a>
             <a href="categories.html">categories</a>
             <a href="review.html">review</a>
             <a href="blogs.html">blogs</a>
@@ -38,6 +35,7 @@
             <div class="fas fa-search" id="search-btn"></div>
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
             <div class="fas fa-user" id="login-btn"></div>
+
         </div>
 
         <!-- <div class="menu-btn" style="display: none;">
@@ -50,20 +48,12 @@
                 <li><a href="#blogs">blogs</a></li>
             </ul>
         </div> -->
-        
+        <!-- </form> -->
+
         <form action="" class="search-form">
             <input type="search" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
         </form>
-
-        <div class="form login-form">
-            <h3>login now</h3>
-            <input type="email" placeholder="your email" class="box">
-            <input type="password" placeholder="your password" class="box">
-            <p>forget your password <a href="#">click here</a></p>
-            <p>don't have an account <a href="#">click here</a></p>
-            <input type="submit" value="login now" class="btn">
-        </div>
 
         <div class="shopping-cart">
         <div class="box">
@@ -75,7 +65,6 @@
                 <span class="quantity">qty: </span>
             </div>
         </div>
-        
         <div class="box">
             <i class="fas fa-trash"></i>
             <img src="images/img2-watch.png" alt="">
@@ -98,24 +87,19 @@
         <a href="#" class="btn">checkout</a>
         </div>
 
+        <div class="form login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="login.html">Sign Up</a></p>
+            <input type="submit" value="login now" class="btn">
+        </div>
     </header>
     
     <!-- header section ends -->
 
-
-    <!-- back to top button -->
-    <!-- <button id="BackToTopButton" onclick="goToTop()" title="Back To Top" class="hidden w-20 h-20 rounded-full text-5xl font-bold text-white border-0 fixed bottom-20 right-12 z-50 bg-[#ff7800] drop-shadow-lg">&uarr;</button>     -->
-
     <!-- home section starts here -->
-
-    <!-- <section class="bg-[#FEAF34] bg-no-repeat flex items-center justify-center bg-center bg-cover px-60 " id="home">
-        <div class="text-center w-240">
-            <h3 class="text-[#130f40] text-5xl">The Best<span class="text-[#eb3a0e] text-7xl"> Offers</span> for you</h3>
-            <p class="text-[#666] text-3xl px-4 py-0 ">The best offers for you at your fingertips.</p>
-            <a href="#" class="btn">Shop now</a>
-        </div>
-        <div class=""><img src="images/banner.png" alt="" class="h-80"></div>
-    </section> -->
 
     <secttion class="home" id="home">
 
@@ -126,7 +110,6 @@
         </div>
 
     </secttion>
-
 
     <!-- home section ends here -->
 
@@ -167,7 +150,7 @@
 
     <!-- products start here -->
 
-    <section class="products" id="products">
+    <!-- <section class="products" id="products">
         <h1 class="heading"> our <span> products</span></h1>
 
         <div class="swiper product-slider">
@@ -290,6 +273,7 @@
                     </div>
                     <a href="#" class="btn">add to cart</a>
                 </div>
+
                 <div class="swiper-slide box">
                     <img src="images/tote bag.png" alt="">
                     <h3>Kawn® Women Corduroy Tote Bag</h3>
@@ -348,7 +332,7 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
     <!-- products ends here -->
 
